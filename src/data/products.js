@@ -1,0 +1,68 @@
+export const products = [
+  {
+    id: 1,
+    title: 'Wireless Headphones',
+    category: 'Electronics',
+    price: 79.99,
+    image: '/products/headphones.svg',
+    description: 'Comfortable over-ear headphones with rich sound and all-day battery life.',
+  },
+  {
+    id: 2,
+    title: 'Smart Watch',
+    category: 'Electronics',
+    price: 119.0,
+    image: '/products/watch.svg',
+    description: 'A lightweight smart watch for notifications, activity tracking, and daily use.',
+  },
+  {
+    id: 3,
+    title: 'Classic Backpack',
+    category: 'Accessories',
+    price: 48.5,
+    image: '/products/backpack.svg',
+    description: 'A practical everyday backpack with a clean design and organized storage.',
+  },
+  {
+    id: 4,
+    title: 'Running Shoes',
+    category: 'Fashion',
+    price: 69.95,
+    image: '/products/shoes.svg',
+    description: 'Cushioned running shoes designed for comfortable walking, training, and commuting.',
+  },
+  {
+    id: 5,
+    title: 'Desk Lamp',
+    category: 'Home',
+    price: 34.75,
+    image: '/products/lamp.svg',
+    description: 'Minimal LED desk lamp with adjustable angle for study and workspace lighting.',
+  },
+  {
+    id: 6,
+    title: 'Ceramic Mug',
+    category: 'Home',
+    price: 16.25,
+    image: '/products/mug.svg',
+    description: 'A durable ceramic mug with a modern shape for coffee, tea, or hot chocolate.',
+  },
+  {
+    id: 7,
+    title: 'Sunglasses',
+    category: 'Accessories',
+    price: 29.99,
+    image: '/products/sunglasses.svg',
+    description: 'Classic everyday sunglasses with a lightweight frame and UV-protective lenses.',
+  },
+  {
+    id: 8,
+    title: 'Basic Hoodie',
+    category: 'Fashion',
+    price: 54.0,
+    image: '/products/hoodie.svg',
+    description: 'Soft cotton-blend hoodie with a relaxed fit for casual everyday wear.',
+  },
+];
+
+export const categories = ['All', ...new Set(products.map((product) => product.category))];
